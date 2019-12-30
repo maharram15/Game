@@ -3,7 +3,7 @@ let A = [];
 let M = [];
 let YaddasSekil = [];
 let Y = [0, 0, 0];
-t = 30;
+let t = 30;
 a();
 Massiv();
 Tbl();
@@ -95,10 +95,10 @@ function a() {
         Cevir();
         t = 30;
     }
-    if (t > "10") {
+    if (t >= "10") {
         te += `00:${t--}`
     }
-    if (t <= "10") {
+    if (t < "10") {
         te += `00:0${t--}`
     }
     document.getElementById('a').innerHTML = te;
